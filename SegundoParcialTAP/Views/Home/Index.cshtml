@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+
+    Negocio.Usuario usuario = null;
+
+    if (Session["Usuario"] != null)
+    {
+        usuario = (Negocio.Usuario)Session["Usuario"];
+    }
+
+}
+
+<div class="jumbotron">
+    <h1>Baldomir, Gabriel - ESBA 2021</h1>
+    <p class="lead">Este es el segundo parcial correspondiente a la materia Tecnicas Avanzadas de Programación.</p>
+    <p><a href="https://ar.linkedin.com/in/gabriel-baldomir-1b589563" class="btn btn-primary btn-lg">Más sobre mi &raquo;</a></p>
+</div>
+
+
+@if (usuario != null)
+{
+    <h1> Usuario: mi usuario es @usuario.Nombre @usuario.Apellido</h1>
+}

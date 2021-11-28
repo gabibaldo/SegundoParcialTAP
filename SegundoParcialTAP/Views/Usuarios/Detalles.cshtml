@@ -1,0 +1,90 @@
+﻿@model SegundoParcialTAP.Models.USUARIO
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>USUARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DNI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DNI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIRECCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIRECCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLAVE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLAVE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHANACIMIENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHANACIMIENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDAD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDAD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPOUSUARIO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPOUSUARIO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.IDUSUARIO }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
